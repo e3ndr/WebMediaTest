@@ -40,10 +40,10 @@
 <br />
 <br />
 
-<h1>
-	{mediaIndex.name} / {mediaIndex.credit}
-</h1>
+<h1>{mediaIndex.name}</h1>
+<p>From: {mediaIndex.credit}</p>
 
+<br />
 <div>
 	{#each Object.entries(mediaIndex.files) as [container, files]}
 		<div>

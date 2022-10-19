@@ -1,82 +1,90 @@
-[{
-    "name": "Russian Dance - Tchaikovsky Nutcracker Suite",
-    "credit": "Lud and Schlatt's Musical Emporium",
-    "slug": "russian-dance_lud-and-schlatt",
-    "files": {
-        "webm": [{
-                "name": "2160p",
-                "codecs": ["VP9", "Opus"],
-                "file": "vp9,opus__2160p.webm",
-                "size": "140MB",
-                "notes": ""
-            },
+[
+    {
+        "category": "Video",
+        "name": "Russian Dance - Tchaikovsky Nutcracker Suite",
+        "credit": "Lud and Schlatt's Musical Emporium",
+        "slug": "russian-dance_lud-and-schlatt",
+        "files": {
+            "webm": [
+                {
+                    "name": "2160p",
+                    "codecs": ["VP9", "Opus"],
+                    "file": "vp9,opus__2160p.webm",
+                    "size": "140MB",
+                    "notes": ""
+                },
 
-            {
-                "name": "720p",
-                "codecs": ["VP8", "Opus"],
-                "file": "vp8,opus__720p.webm",
-                "size": "4.88MB",
-                "notes": ""
-            }
-        ],
-        "mp4": [{
-                "name": "2160p",
-                "codecs": ["HEVC", "aac"],
-                "file": "hevc,aac__2160p.mp4",
-                "size": "18.2MB",
-                "notes": ""
-            },
+                {
+                    "name": "720p",
+                    "codecs": ["VP8", "Opus"],
+                    "file": "vp8,opus__720p.webm",
+                    "size": "4.88MB",
+                    "notes": ""
+                }
+            ],
+            "mp4": [
+                {
+                    "name": "2160p",
+                    "codecs": ["HEVC", "aac"],
+                    "file": "hevc,aac__2160p.mp4",
+                    "size": "18.2MB",
+                    "notes": ""
+                },
 
-            {
-                "name": "2160p",
-                "codecs": ["h264", "aac"],
-                "file": "h264,aac__2160p.mp4",
-                "size": "16.1MB",
-                "notes": ""
-            },
-            {
-                "name": "1080p",
-                "codecs": ["h264", "aac"],
-                "file": "h264,aac__1080p.mp4",
-                "size": "18.1MB",
-                "notes": ""
-            },
-            {
-                "name": "720p",
-                "codecs": ["h264", "aac"],
-                "file": "h264,aac__720p.mp4",
-                "size": "18.0MB",
-                "notes": ""
-            },
-            {
-                "name": "360p",
-                "codecs": ["h264", "aac"],
-                "file": "h264,aac__360p.mp4",
-                "size": "17.8MB",
-                "notes": ""
-            }
-        ],
-        "flv": [{
-                "name": "240p (Flash 7+)",
-                "codecs": ["Sorenson Spark", "mp3"],
-                "file": "sorenson-spark,mp3__240p.flv",
-                "size": "3.03MB",
-                "notes": "<a href=\"/media/russian-dance_lud-and-schlatt/flash.html\">Embed</a> <br /> Should work on the Wii."
-            },
-            {
-                "name": "240p (Flash 9+)",
-                "codecs": ["h264", "aac"],
-                "file": "h264,aac__240p.flv",
-                "size": "5.23MB",
-                "notes": ""
-            }
-        ],
-        "swf": [{
-            "name": "240p (Flash 6+)",
-            "codecs": ["Sorenson Spark", "mp3"],
-            "file": "sorenson-spark,mp3__240p.swf",
-            "size": "3.01MB",
-            "notes": "<a href=\"/media/russian-dance_lud-and-schlatt/swf.html\">Embed</a> <br /> Partially works on the PSP (audio plays, no video). <br /> The Wii will play it but it struggles to keep up."
-        }]
+                {
+                    "name": "2160p",
+                    "codecs": ["h264", "aac"],
+                    "file": "h264,aac__2160p.mp4",
+                    "size": "16.1MB",
+                    "notes": ""
+                },
+                {
+                    "name": "1080p",
+                    "codecs": ["h264", "aac"],
+                    "file": "h264,aac__1080p.mp4",
+                    "size": "18.1MB",
+                    "notes": ""
+                },
+                {
+                    "name": "720p",
+                    "codecs": ["h264", "aac"],
+                    "file": "h264,aac__720p.mp4",
+                    "size": "18.0MB",
+                    "notes": ""
+                },
+                {
+                    "name": "360p",
+                    "codecs": ["h264", "aac"],
+                    "file": "h264,aac__360p.mp4",
+                    "size": "17.8MB",
+                    "notes": ""
+                }
+            ],
+            "flv": [
+                {
+                    "name": "240p (Flash 7+)",
+                    "codecs": ["Sorenson Spark", "mp3"],
+                    "file": "sorenson-spark,mp3__240p.flv",
+                    "size": "3.03MB",
+                    "notes": "<a href=\"/media/russian-dance_lud-and-schlatt/flash.html\">Embed</a> <br /> Should work on the Wii."
+                },
+                {
+                    "name": "240p (Flash 9+)",
+                    "codecs": ["h264", "aac"],
+                    "file": "h264,aac__240p.flv",
+                    "size": "5.23MB",
+                    "notes": ""
+                }
+            ],
+            "swf": [
+                {
+                    "name": "240p (Flash 6+)",
+                    "codecs": ["Sorenson Spark", "mp3"],
+                    "file": "sorenson-spark,mp3__240p.swf",
+                    "size": "3.01MB",
+                    "notes": "<a href=\"/media/russian-dance_lud-and-schlatt/swf.html\">Embed</a> <br /> Partially works on the PSP (audio plays, no video). <br /> The Wii will play it but it struggles to keep up."
+                }
+            ]
+        }
     }
-}]
+]

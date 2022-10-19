@@ -14,6 +14,8 @@
 	{#each mediaIndexes as index}
 		<li>
 			<a href="/media/{index.slug}">
+				{index.category}
+				/
 				{index.name}
 				/
 				{index.credit}

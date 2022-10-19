@@ -16,9 +16,10 @@
 </p>
 
 <br />
-<a href="/media">Browse Sample Media</a>
+<h2>
+	<a href="/media">Browse Sample Media</a>
+</h2>
 
-<br />
 <br />
 <br />
 <br />
