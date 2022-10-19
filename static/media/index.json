@@ -66,7 +66,7 @@
                     "codecs": ["Sorenson Spark", "mp3"],
                     "file": "sorenson-spark,mp3__240p.flv",
                     "size": "3.03MB",
-                    "notes": "<a href=\"/media/russian-dance_lud-and-schlatt/sorenson-spark,mp3__240p.flv/flash\">Embed</a> <br /> Should work on the Wii."
+                    "notes": "Should work on the Wii."
                 },
                 {
                     "name": "240p (Flash 9+)",
@@ -82,7 +82,7 @@
                     "codecs": ["Sorenson Spark", "mp3"],
                     "file": "sorenson-spark,mp3__240p.swf",
                     "size": "3.01MB",
-                    "notes": "<a href=\"/media/russian-dance_lud-and-schlatt/sorenson-spark,mp3__240p.swf/swf\">Embed</a> <br /> Partially works on the PSP (audio plays, no video). <br /> The Wii plays it but struggles to keep up."
+                    "notes": "Partially works on the PSP (audio plays, no video). <br /> The Wii plays it but struggles to keep up."
                 }
             ]
         }

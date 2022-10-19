@@ -28,4 +28,5 @@
 <br />
 <br />
 
-<embed src="/media/{slug}/{file}" width="426" height="240" />
+<!-- svelte-ignore a11y-media-has-caption -->
+<video src="/media/{slug}/{file}" width="426" height="240" controls />

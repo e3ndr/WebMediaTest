@@ -46,6 +46,8 @@
 <br />
 <div>
 	{#each Object.entries(mediaIndex.files) as [container, files]}
+		{@const playerType = { flv: 'flash', swf: 'swf' }[container] || 'html5'}
+
 		<div>
 			<h2>{container.toUpperCase()}</h2>
 			<table>
@@ -55,6 +57,7 @@
 						<th>Codecs</th>
 						<th>Size</th>
 						<th>File</th>
+						<th>Player</th>
 						<th>Notes</th>
 					</tr>
 				</thead>
@@ -64,8 +67,16 @@
 							<td>{file.name}</td>
 							<td>{file.codecs.join(', ')}</td>
 							<td>{file.size}</td>
-							<td><a href="/media/{mediaIndex.slug}/{file.file}" target="_blank">{file.file}</a></td
-							>
+							<td>
+								<a href="/media/{mediaIndex.slug}/{file.file}" target="_blank">
+									{file.file}
+								</a>
+							</td>
+							<td>
+								<a href="/media/{mediaIndex.slug}/{file.file}/{playerType}">
+									{playerType.toUpperCase()}
+								</a>
+							</td>
 							<td>
 								{@html file.notes}
 							</td>

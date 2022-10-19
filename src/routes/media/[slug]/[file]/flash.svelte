@@ -26,6 +26,7 @@
 <a href="/media/{slug}">Go Back</a>
 <br />
 <br />
+<br />
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <object type="application/x-shockwave-flash" data="/flv-player.swf" width="426" height="240">
