@@ -1,0 +1,12 @@
+# webm
+vp9,libopus
+vp8,libopus
+
+# mp4
+hevc,aac
+h264,aac
+
+# flv
+flv1,mp3
+flashsv,mp3
+h264,aac
