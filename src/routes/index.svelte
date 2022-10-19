@@ -7,12 +7,6 @@
 	<br />
 	<br />
 	This site also has Flash/FLV content for testing console browsers (like on the Wii or PSP).
-	<br />
-	<br />
-	This site also has SSL set to optional, since modern certificates are not valid to older browsers.
-	If you're still experiencing issues then you can try using
-	<a href="http://insecure-wmt.e3ndr.xyz">http://insecure-wmt.e3ndr.xyz</a> instead, which has SSL forcefully
-	set to OFF.
 </p>
 
 <br />
@@ -34,8 +28,6 @@
 <div>
 	&copy;
 	<a href="https://wmt.e3ndr.xyz" target="_blank">https://wmt.e3ndr.xyz </a>
-	//
-	<a href="http://insecure-wmt.e3ndr.xyz" target="_blank">http://insecure-wmt.e3ndr.xyz </a>
 </div>
 
 <style>
