@@ -34,6 +34,8 @@
 	<param name="allowFullScreen" value="true" />
 	<param
 		name="FlashVars"
-		value="flv={encodeURIComponent(`/media/${slug}/${file}`)}&amp;width=426"
+		value="flv={encodeURIComponent(
+			`/media/${slug}/${file}`
+		)}&amp;showvolume=1&amp;showtime=2&amp;showfullscreen=1"
 	/>
 </object>
