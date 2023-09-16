@@ -15,6 +15,11 @@
 </h2>
 
 <br />
+<h2>
+	<a href="/tester">See what my browser supports</a>
+</h2>
+
+<br />
 <br />
 <br />
 <br />
