@@ -43,6 +43,10 @@
 <h1>{mediaIndex.name}</h1>
 <p>From: {mediaIndex.credit}</p>
 
+// TODO add a hls playlist. 
+// TODO add a dash playlist.
+
+
 <br />
 <div>
 	{#each Object.entries(mediaIndex.files) as [container, files]}
