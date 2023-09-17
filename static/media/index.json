@@ -78,6 +78,13 @@
                     "notes": "Should work on the Wii."
                 },
                 {
+                    "name": "240p (Flash 8+, broken video)",
+                    "codecs": ["vp6", "mp3"],
+                    "file": "vp6,mp3__240p.flv",
+                    "size": "5.94MB",
+                    "notes": ""
+                },
+                {
                     "name": "240p (Flash 9+)",
                     "codecs": ["h264", "mp3"],
                     "file": "h264,mp3__240p.flv",
@@ -89,13 +96,6 @@
                     "codecs": ["h264", "aac"],
                     "file": "h264,aac__240p.flv",
                     "size": "5.23MB",
-                    "notes": ""
-                },
-                {
-                    "name": "240p (Flash 8+, broken video)",
-                    "codecs": ["vp6", "mp3"],
-                    "file": "vp6,mp3__240p.flv",
-                    "size": "5.94MB",
                     "notes": ""
                 }
             ],

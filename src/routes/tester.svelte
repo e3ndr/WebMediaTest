@@ -241,47 +241,47 @@
 	</thead>
 	<tbody>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Screen Video </td>
+			<td style="font-weight: bold; color: black;"> Screen Video (6+) </td>
 			<td title="6" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Screen Video 2 </td>
+			<td style="font-weight: bold; color: black;"> Screen Video 2 (8+) </td>
 			<td title="8" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Sorenson Spark / H.263</td>
+			<td style="font-weight: bold; color: black;"> Sorenson Spark / H.263 (6+) </td>
 			<td title="6" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> On2 TrueMotion VP6 </td>
+			<td style="font-weight: bold; color: black;"> On2 TrueMotion VP6 (8+) </td>
 			<td title="8" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> AVC1 / H.264 </td>
+			<td style="font-weight: bold; color: black;"> AVC1 / H.264 (9+) </td>
 			<td title="9" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> MP3 </td>
+			<td style="font-weight: bold; color: black;"> MP3 (6+) </td>
 			<td title="6" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> AAC </td>
+			<td style="font-weight: bold; color: black;"> AAC (9+) </td>
 			<td title="9" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Speex </td>
+			<td style="font-weight: bold; color: black;"> Speex (10+) </td>
 			<td title="10" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Asao </td>
+			<td style="font-weight: bold; color: black;"> Asao (6+) </td>
 			<td title="6" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> A-law </td>
+			<td style="font-weight: bold; color: black;"> A-law (6+) </td>
 			<td title="6" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> μ-law </td>
+			<td style="font-weight: bold; color: black;"> μ-law (6+) </td>
 			<td title="6" class="flash-detect" style="background: red;"> No </td>
 		</tr>
 	</tbody>
