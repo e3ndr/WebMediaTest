@@ -1,3 +1,7 @@
+<script>
+	import mediaIndexes from '$lib/media/index.json';
+</script>
+
 <h1>WebMediaTest</h1>
 <p>
 	Howdy, this website has sample media for testing the capabilities of lesser known/older browsers.
@@ -10,10 +14,23 @@
 </p>
 
 <br />
-<h2>
-	<a href="/media">Browse Sample Media</a>
-</h2>
+<h2>Sample Media</h2>
 
+<ul>
+	{#each mediaIndexes as index}
+		<li>
+			<a href="/media/{index.slug}">
+				{index.category}
+				/
+				{index.name}
+				/
+				{index.credit}
+			</a>
+		</li>
+	{/each}
+</ul>
+
+<br />
 <br />
 <h2>
 	<a href="/tester">See what my browser supports</a>
