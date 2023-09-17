@@ -334,6 +334,8 @@
 		}
 
 		function doFlashTest() {
+			if (typeof window.FlashDetect == 'undefined') return;
+
 			var toTest = document.getElementsByClassName('flash-detect');
 			for (var i = 0; i < toTest.length; i++) {
 				var elem = toTest[i];
@@ -345,8 +347,16 @@
 		}
 
 		function doInit() {
-			doFlashTest();
-			doTestViaMediaElement();
+			try {
+				doFlashTest();
+			} catch (e) {
+				alert(e);
+			}
+			try {
+				doTestViaMediaElement();
+			} catch (e) {
+				alert(e);
+			}
 		}
 
 		window.onload = doInit;
