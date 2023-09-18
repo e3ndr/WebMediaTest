@@ -47,7 +47,7 @@ export const VIDEO_CODECS = [
         name: 'MPEG 2 / H.262',
         slug: 'mpeg2',
         containers: ["mp4", "mkv", "quicktime", "x-msvideo", "mp2t"],
-        testFile: '/test-media/mpeg2/media.ts'
+        testFile: 'media.ts'
     },
     {
         subType: false,
@@ -79,7 +79,7 @@ export const VIDEO_CODECS = [
         name: '&#8627; Baseline, 1.0',
         slug: 'avc1',
         containers: ["mp4", "mkv", "3gpp", "quicktime", "x-msvideo", "mp2t"],
-        testFile: "/test/media/avc1/media.mp4"
+        testFile: "media.mp4"
     },
     {
         subType: false,
@@ -95,7 +95,7 @@ export const VIDEO_CODECS = [
         name: '&#8627; Main, 3.1',
         slug: 'hevc',
         containers: ["mp4", "mkv", "quicktime", "x-msvideo", "mp2t"],
-        testFile: "/test/media/hevc/media.mp4"
+        testFile: "media.mp4"
     },
     {
         subType: false,
@@ -127,7 +127,7 @@ export const VIDEO_CODECS = [
         name: 'VP8',
         slug: 'vp8',
         containers: ["webm", "mkv", "x-msvideo"],
-        testFile: "/test/media/vp8/media.webm"
+        testFile: "media.webm"
     },
     {
         subType: false,
@@ -135,7 +135,7 @@ export const VIDEO_CODECS = [
         name: 'VP9',
         slug: 'vp9',
         containers: ["webm", "mkv", "x-msvideo"],
-        testFile: "/test/media/vp8/media.webm"
+        testFile: "media.webm"
     },
     {
         subType: false,

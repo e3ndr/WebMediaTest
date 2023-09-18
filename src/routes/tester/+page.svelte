@@ -142,7 +142,7 @@
 				<td>
 					{#if codecTestFile}
 						<a
-							href={codecTestFile}
+							href="/test-media/{codecSlug}/{codecTestFile}"
 							style="font-weight: bold; color: black;"
 							style:margin-left={isCodecSubType ? '8px;' : '0;'}
 						>
@@ -194,7 +194,7 @@
 				<td>
 					{#if codecTestFile}
 						<a
-							href={codecTestFile}
+							href="/test-media/{codecSlug}/{codecTestFile}"
 							style="font-weight: bold; color: black;"
 							style:margin-left={isCodecSubType ? '8px;' : '0;'}
 						>
