@@ -198,8 +198,8 @@ export const VIDEO_CODECS = [
         mime: 'mjpeg',
         name: 'Motion-JPEG',
         slug: 'mjpeg',
-        containers: [],
-        testFile: null
+        containers: ["mp4", "mkv", "quicktime", "x-msvideo"],
+        testFile: "media.avi"
     }
 ];
 
