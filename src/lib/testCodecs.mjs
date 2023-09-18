@@ -209,16 +209,16 @@ export const AUDIO_CODECS = [
         mime: 'mp4a.40.2',
         name: 'AAC',
         slug: 'aac',
-        containers: [],
-        testFile: null
+        containers: ["mp4", "mkv", "3gpp", "quicktime", "x-msvideo", "mp2t"],
+        testFile: "media.mp4"
     },
     {
         subType: false,
         mime: 'mp3',
         name: 'MP3',
         slug: 'mp3',
-        containers: [],
-        testFile: null
+        containers: ["mp4", "mkv", "quicktime", "x-msvideo", "mp2t"],
+        testFile: "media.avi"
     },
     {
         subType: false,
