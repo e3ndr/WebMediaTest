@@ -38,7 +38,8 @@ export const CONTAINER_FORMATS = [
         mime: "mp2t",
         name: "MPEG-TS",
         slug: 'media.ts'
-    }];
+    }
+];
 
 export const VIDEO_CODECS = [
     {
