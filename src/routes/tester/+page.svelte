@@ -187,6 +187,15 @@
 			</tr>
 		{/each}
 
+		<tr style="color: white;">
+			<td style="font-weight: bold; color: black;"> (Container-only, video) </td>
+			{#each CONTAINER_FORMATS as { mime: formatMime }}
+				<td style="padding: 0;">
+					<span title="video/{formatMime}" class="to-test" style="background: red;"> No </span>
+				</td>
+			{/each}
+		</tr>
+
 		<tr>
 			<td style="padding: 4px;" />
 			{#each CONTAINER_FORMATS as _}
@@ -238,15 +247,6 @@
 				{/each}
 			</tr>
 		{/each}
-
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> (Container-only, video) </td>
-			{#each CONTAINER_FORMATS as { mime: formatMime }}
-				<td style="padding: 0;">
-					<span title="video/{formatMime}" class="to-test" style="background: red;"> No </span>
-				</td>
-			{/each}
-		</tr>
 
 		<tr style="color: white;">
 			<td style="font-weight: bold; color: black;"> (Container-only, audio) </td>
