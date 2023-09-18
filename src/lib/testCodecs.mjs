@@ -134,7 +134,7 @@ export const VIDEO_CODECS = [
         mime: 'vp9',
         name: 'VP9',
         slug: 'vp9',
-        containers: ["webm", "mkv", "x-msvideo"],
+        containers: ["mp4", "webm", "mkv", "x-msvideo"],
         testFile: "media.webm"
     },
     {
