@@ -1,5 +1,5 @@
 <script>
-	import mediaIndexes from '$lib/media/index.json';
+	export let data;
 </script>
 
 <h1>WebMediaTest</h1>
@@ -17,16 +17,18 @@
 <h2>Sample Media</h2>
 
 <ul>
-	{#each mediaIndexes as index}
-		<li>
-			<a href="/media/{index.slug}">
-				{index.category}
-				/
-				{index.name}
-				/
-				{index.credit}
-			</a>
-		</li>
+	{#each Object.entries(data.mediaIndexes) as [category, indexes]}
+		{#each indexes as index}
+			<li>
+				<a href="/media/{category}/{index.slug}">
+					{index.category}
+					/
+					{index.name}
+					/
+					{index.credit}
+				</a>
+			</li>
+		{/each}
 	{/each}
 </ul>
 

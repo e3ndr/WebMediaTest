@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WebMediaTest</title>
 
-    <title>WebMediaTest</title>
+		<!-- Svelte -->
 
-    <!-- Svelte -->
+		%sveltekit.head%
+	</head>
 
-    %sveltekit.head%
-</head>
-
-<body>
-    %sveltekit.body%
-</body>
-
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>
