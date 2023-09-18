@@ -158,8 +158,8 @@ export const VIDEO_CODECS = [
         mime: 'av01.0.00M.08',
         name: '&#8627; Main, 2.0',
         slug: 'av1',
-        containers: [],
-        testFile: null
+        containers: ["mp4", "webm", "mkv", "x-msvideo"],
+        testFile: "media.webm"
     },
     {
         subType: false,
