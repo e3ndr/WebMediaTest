@@ -91,6 +91,11 @@
 <h1 style="margin-bottom: 0;">Playable media as reported by your browser</h1>
 <p style="margin-top: 0;">Hover each cell for the Mime Type used.</p>
 
+<p>
+	Note that the test files are not meant to be indicative of quality, they are only for testing
+	player compatibility.
+</p>
+
 <h2>Legend</h2>
 <table style="width: auto;">
 	<colgroup>
