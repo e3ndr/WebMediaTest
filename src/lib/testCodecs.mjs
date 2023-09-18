@@ -95,7 +95,7 @@ export const VIDEO_CODECS = [
         name: '&#8627; Main, 3.1',
         slug: 'hevc',
         containers: ["mp4", "mkv", "quicktime", "x-msvideo", "mp2t"],
-        testFile: "/test/media/hev1/media.mp4"
+        testFile: "/test/media/hevc/media.mp4"
     },
     {
         subType: false,
@@ -126,16 +126,16 @@ export const VIDEO_CODECS = [
         mime: 'vp8',
         name: 'VP8',
         slug: 'vp8',
-        containers: [],
-        testFile: null
+        containers: ["webm", "mkv", "x-msvideo"],
+        testFile: "/test/media/vp8/media.webm"
     },
     {
         subType: false,
         mime: 'vp9',
         name: 'VP9',
         slug: 'vp9',
-        containers: [],
-        testFile: null
+        containers: ["webm", "mkv", "x-msvideo"],
+        testFile: "/test/media/vp8/media.webm"
     },
     {
         subType: false,
