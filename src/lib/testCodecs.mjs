@@ -181,9 +181,9 @@ export const VIDEO_CODECS = [
         subType: false,
         mime: 'theora',
         name: 'Theora',
-        slug: null,
-        containers: [],
-        testFile: null
+        slug: 'theora',
+        containers: ["ogg", "mkv", "quicktime", "x-msvideo"],
+        testFile: "media.ogg"
     },
     {
         subType: false,
