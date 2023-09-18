@@ -50,14 +50,16 @@
 		'3gpp': '3GP',
 		'3gp2': '3GP2',
 		quicktime: 'QuickTime (.mov)',
-		'x-msvideo': 'AVI'
+		'x-msvideo': 'AVI',
+		mp2t: 'MPEG-TS'
 	};
 
 	const SPECIAL = {
 		'audio/mp4': 'MPEG-4 Part 3 (.m4a)',
 		'audio/flac': 'FLAC',
 		'audio/mpeg': 'MP3',
-		'audio/wav': 'Wave (.wav)'
+		'audio/wav': 'Wave (.wav)',
+		'application/x-mpegURL': 'Apple HLS'
 	};
 
 	onMount(() => window.doInit());
