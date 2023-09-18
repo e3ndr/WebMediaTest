@@ -392,38 +392,37 @@
 		padding: 10px 5px;
 	}
 
+	td .to-test {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
 		table-layout: fixed;
 	}
 
-	table td {
-		border-color: black;
-		border-style: solid;
-		border-width: 1px;
-		font-family: Arial, sans-serif;
-		font-size: 14px;
-		overflow: hidden;
-		padding: 10px 5px;
-		word-break: normal;
-	}
-
 	table th {
-		border-color: black;
-		border-style: solid;
-		border-width: 1px;
-		font-family: Arial, sans-serif;
-		font-size: 14px;
 		font-weight: bold;
-		overflow: hidden;
-		padding: 10px 5px;
-		word-break: normal;
 	}
 
 	table th,
 	table td {
+		font-family: Arial, sans-serif;
+		border-color: black;
+		border-style: solid;
+		border-width: 1px;
+		padding: 10px 5px;
+		/* font-family: Arial, sans-serif; */
+		font-size: 14px;
 		text-align: left;
 		vertical-align: top;
+		position: relative;
+		word-break: normal;
+		overflow: hidden;
 	}
 </style>
