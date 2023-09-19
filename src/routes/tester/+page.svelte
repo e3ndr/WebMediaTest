@@ -5,10 +5,9 @@
 		AUDIO_CODECS,
 		SPECIAL_FORMATS
 	} from '$lib/testCodecs.mjs';
-	import Result from 'postcss/lib/result';
+	import { prototype } from 'postcss/lib/previous-map';
 
 	import { onMount } from 'svelte';
-	import { element, element } from 'svelte/internal';
 
 	onMount(() => window.doInit());
 </script>
@@ -20,6 +19,40 @@
 	<script>
 		// This code is designed this way to maintain compability for non-HTML5 browsers. Deal with it.
 
+		if (!document.getElementsByClassName) {
+			// Add a getElementsByClassName function if the browser doesn't have one
+			// Limitation: only works with one class name
+			// Copyright: Eike Send http://eike.se/nd
+			// License: MIT License
+			document.getElementsByClassName = function (search) {
+				var d = document,
+					elements,
+					pattern,
+					i,
+					results = [];
+				if (d.querySelectorAll) {
+					// IE8
+					return d.querySelectorAll('.' + search);
+				}
+				if (d.evaluate) {
+					// IE6, IE7
+					pattern = ".//*[contains(concat(' ', @class, ' '), ' " + search + " ')]";
+					elements = d.evaluate(pattern, d, null, 0, null);
+					while ((i = elements.iterateNext())) {
+						results.push(i);
+					}
+				} else {
+					elements = d.getElementsByTagName('*');
+					pattern = new RegExp('(^|\\s)' + search + '(\\s|$)');
+					for (i = 0; i < elements.length; i++) {
+						if (pattern.test(elements[i].className)) {
+							results.push(elements[i]);
+						}
+					}
+				}
+				return results;
+			};
+		}
 		function tryFormatHtml(testElement, mime) {
 			var result = testElement.canPlayType(mime);
 			switch (result) {
@@ -44,6 +77,8 @@
 		}
 
 		function doTestViaMediaElement() {
+			if (!window.HTMLVideoElement || !window.HTMLVideoElement.prototype.canPlayType) return;
+
 			// document.getElementById('detection-method-used').innerText = 'HTMLMediaElement';
 			var testElement = document.createElement('video');
 			var toTest = document.getElementsByClassName('to-test');
@@ -60,6 +95,14 @@
 		function doFlashTest() {
 			if (typeof window.FlashDetect == 'undefined') return;
 
+			if (FlashDetect.installed) {
+				document.getElementById('flash-support-message').innerText =
+					'Your browser supports Flash! Raw version: ' + FlashDetect.raw;
+			} else {
+				document.getElementById('flash-support-message').innerText =
+					'Your browser does not support Flash.';
+			}
+
 			var toTest = document.getElementsByClassName('flash-detect');
 			for (var i = 0; i < toTest.length; i++) {
 				var elem = toTest[i];
@@ -68,11 +111,11 @@
 
 				if (result) {
 					elem.innerText = 'Maybe';
-					element.style.backgroundColor = 'gold';
+					elem.style.backgroundColor = 'gold';
 					elem.style.color = 'white';
 				} else {
 					elem.innerText = 'No';
-					element.style.backgroundColor = 'red';
+					elem.style.backgroundColor = 'red';
 					elem.style.color = 'white';
 				}
 			}
@@ -330,6 +373,7 @@
 <br />
 
 <h2>Flash Support</h2>
+<p id="flash-support-message" />
 <table style="width: auto;">
 	<colgroup>
 		<col span="1" style="width: 200px;" />
@@ -404,7 +448,7 @@
 	}
 
 	td .to-test {
-		position: absolute;
+		/* position: absolute; */
 		top: 0;
 		bottom: 0;
 		left: 0;
