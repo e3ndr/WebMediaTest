@@ -176,7 +176,7 @@ export const VIDEO_CODECS = [
         name: 'Thor',
         slug: null,
         containers: [],
-        testFile: null
+        testFile: null // Don't think I can find an encoder for this...
     },
     {
         subType: false,
