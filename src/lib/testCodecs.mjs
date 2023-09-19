@@ -95,7 +95,7 @@ export const VIDEO_CODECS = [
         mime: 'hev1.1.6.L93.B0',
         name: '&#8627; Main, 3.1',
         slug: 'hevc',
-        containers: ["mp4", "mkv", "quicktime", "x-msvideo", "mp2t"],
+        containers: ["mp4", "mkv", "quicktime", "mp2t"],
         testFile: "media.mp4"
     },
     {
