@@ -5,8 +5,10 @@
 		AUDIO_CODECS,
 		SPECIAL_FORMATS
 	} from '$lib/testCodecs.mjs';
+	import Result from 'postcss/lib/result';
 
 	import { onMount } from 'svelte';
+	import { element, element } from 'svelte/internal';
 
 	onMount(() => window.doInit());
 </script>
@@ -50,7 +52,8 @@
 				var mime = elem.title;
 				var result = tryFormatHtml(testElement, mime);
 				elem.innerText = result.text;
-				elem.style = 'background-color: ' + result.color + '; color: white;';
+				elem.style.backgroundColor = result.color;
+				elem.style.color = 'white';
 			}
 		}
 
@@ -62,8 +65,16 @@
 				var elem = toTest[i];
 				var version = elem.title;
 				var result = FlashDetect.majorAtLeast(parseInt(version));
-				elem.innerText = result ? 'Maybe' : 'No';
-				elem.style = result ? 'background: gold; color: white;' : 'background: red; color: white;';
+
+				if (result) {
+					elem.innerText = 'Maybe';
+					element.style.backgroundColor = 'gold';
+					elem.style.color = 'white';
+				} else {
+					elem.innerText = 'No';
+					element.style.backgroundColor = 'red';
+					elem.style.color = 'white';
+				}
 			}
 		}
 
