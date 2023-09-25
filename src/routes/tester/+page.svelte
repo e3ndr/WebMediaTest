@@ -5,7 +5,7 @@
 		AUDIO_CODECS,
 		SPECIAL_FORMATS
 	} from '$lib/testCodecs.mjs';
-	import { prototype } from 'postcss/lib/previous-map';
+	import { STATIC, ANIMATED } from '$lib/testImages.mjs';
 
 	import { onMount } from 'svelte';
 
@@ -434,7 +434,111 @@
 		</tr>
 	</tbody>
 </table>
+<br />
+<br />
 
+<h2>Static Image Support</h2>
+<table style="width: auto;">
+	<thead>
+		<tr>
+			{#each STATIC as extension}
+				<th> {extension} </th>
+			{/each}
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			{#each STATIC as extension}
+				<td>
+					<a href="/images/tester/static/opaque.{extension}">
+						<img
+							src="/images/tester/static/opaque.{extension}"
+							alt={extension}
+							style="width: 150px; display: block;"
+						/>
+					</a>
+				</td>
+			{/each}
+		</tr>
+	</tbody>
+</table>
+
+<h2>Animated Image Support</h2>
+<table style="width: auto;">
+	<thead>
+		<tr>
+			<td />
+			{#each ANIMATED as extension}
+				<th> {extension} </th>
+			{/each}
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="font-weight: bold;"> Opaque </td>
+			{#each ANIMATED as extension}
+				<td>
+					<a href="/images/tester/animated/opaque.{extension}">
+						<img
+							src="/images/tester/animated/opaque.{extension}"
+							alt={extension}
+							style="width: 150px;"
+						/>
+					</a>
+				</td>
+			{/each}
+		</tr>
+		<tr>
+			<td style="font-weight: bold;"> Transparent </td>
+			{#each ANIMATED as extension}
+				<td>
+					<a href="/images/tester/animated/transparent.{extension}">
+						<img
+							src="/images/tester/animated/transparent.{extension}"
+							alt={extension}
+							style="width: 150px;"
+						/>
+					</a>
+				</td>
+			{/each}
+		</tr>
+	</tbody>
+</table>
+
+<p>Animated images <b>should not</b> appear stacked or smeared!</p>
+<table style="width: auto;">
+	<thead>
+		<tr>
+			<th style="color: red;"> Bad &#10005; </th>
+			<th style="color: green;"> Good &check; </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<img
+					src="/images/tester/bad_stacked.png"
+					alt="A stacked animation."
+					style="width: 100px; height: 100px; display: block;"
+				/>
+			</td>
+			<td>
+				<img
+					src="/images/tester/good.png"
+					alt="A good/proper animation."
+					style="width: 100px; height: 100px; display: block;"
+				/>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
