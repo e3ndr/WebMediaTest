@@ -2,6 +2,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>WebMediaTest</title>
+</svelte:head>
+
 <h1>WebMediaTest</h1>
 <p>
 	Howdy, this website has sample media for testing the capabilities of lesser known/older browsers.
