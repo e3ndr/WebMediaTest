@@ -163,6 +163,14 @@
 			testFile: null
 		}
 	];
+
+	const SPECIAL_VIDEO_FORMATS = [
+		{
+			mime: 'application/x-mpegURL',
+			name: 'Apple HLS',
+			testFile: null
+		}
+	];
 </script>
 
 <svelte:head>
@@ -332,5 +340,43 @@
 				were also merged into AV1 by Xiph and Cicso respectively.
 			</td>
 		</tr>
+	</tbody>
+</table>
+
+<br />
+<br />
+
+<h2>Other formats</h2>
+<table style="width: auto;">
+	<colgroup>
+		<col span="1" style="width: 175px;" />
+		<col span="1" style="width: 150px;" />
+	</colgroup>
+
+	<thead>
+		<tr>
+			<th> Type </th>
+			<th> Supported </th>
+		</tr>
+	</thead>
+	<tbody>
+		{#each SPECIAL_VIDEO_FORMATS as { mime, name, testFile }}
+			<tr style="color: white;">
+				<td style="font-weight: bold; color: black;"> {@html name} </td>
+				<td style="padding: 0;">
+					{#if testFile}
+						<a
+							href="/media/player?file={encodeURIComponent(testFile)}"
+							class="to-test"
+							style="background: red;"
+						>
+							No
+						</a>
+					{:else}
+						<span title={mime} class="to-test" style="background: red;"> No </span>
+					{/if}
+				</td>
+			</tr>
+		{/each}
 	</tbody>
 </table>
