@@ -53,7 +53,7 @@
 		{
 			subType: false,
 			mime: 'g711',
-			name: 'G.711<a href="#footnote2">&#8224;</a>',
+			name: 'G.711<a href="#footnote2">&#8224;&#8224;</a>',
 			slug: null,
 			containers: [],
 			testFile: null
@@ -61,7 +61,7 @@
 		{
 			subType: true,
 			mime: 'ulaw',
-			name: '&#8627; μ-law<a href="#footnote2">&#8224;</a>',
+			name: '&#8627; μ-law<a href="#footnote2">&#8224;&#8224;</a>',
 			slug: null,
 			containers: [],
 			testFile: null
@@ -69,7 +69,7 @@
 		{
 			subType: true,
 			mime: 'alaw',
-			name: '&#8627; A-law<a href="#footnote2">&#8224;</a>',
+			name: '&#8627; A-law<a href="#footnote2">&#8224;&#8224;</a>',
 			slug: null,
 			containers: [],
 			testFile: null
@@ -77,7 +77,7 @@
 		{
 			subType: false,
 			mime: 'g722',
-			name: 'G.722<a href="#footnote2">&#8224;</a>',
+			name: 'G.722<a href="#footnote2">&#8224;&#8224;</a>',
 			slug: null,
 			containers: [],
 			testFile: null
