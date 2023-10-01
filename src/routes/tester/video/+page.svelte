@@ -166,7 +166,7 @@
 
 	const SPECIAL_VIDEO_FORMATS = [
 		{
-			mime: 'application/x-mpegURL',
+			mime: 'application/vnd.apple.mpegurl',
 			name: 'Apple HLS',
 			testFile:
 				'https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8' // https://developer.apple.com/streaming/examples/
