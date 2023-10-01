@@ -180,6 +180,66 @@
 	<script>
 		// This code is designed this way to maintain compability for non-HTML5 browsers. Deal with it.
 
+		function supportsWEBMTransparency() {
+			// Based off: https://stackoverflow.com/a/40511297
+			var detection = new Promise(function (resolve) {
+				var canvas = document.createElement('canvas');
+
+				if (!canvas.getContext && !canvas.getContext('2d')) {
+					resolve(false);
+					return;
+				}
+
+				var ctx = canvas.getContext('2d');
+
+				var vid = document.createElement('video');
+				vid.autoplay = true;
+				vid.loop = false;
+				vid.muted = true;
+				vid.style = 'position: absolute; top: 0; left: 200px;'; // A bit to the left to avoid the BACK button.
+
+				vid.addEventListener(
+					'play',
+					function () {
+						vid.remove();
+
+						// Draw the current frame of video onto canvas.
+						ctx.drawImage(vid, 0, 0);
+						var testPixel = ctx.getImageData(1, 1, 1, 1).data;
+						console.log(testPixel);
+						if (testPixel[3] == 123) {
+							resolve(true);
+						} else {
+							resolve(false);
+						}
+					},
+					false
+				);
+
+				vid.addEventListener('error', function () {
+					document.body.removeChild(vid);
+					resolve(false);
+				});
+
+				var source = document.createElement('source');
+				source.src = '/test-media/transparency-test.webm';
+				source.addEventListener('error', function () {
+					document.body.removeChild(vid);
+					resolve(false);
+				});
+				vid.appendChild(source);
+
+				document.body.appendChild(vid);
+			});
+
+			detection.then((supported) => {
+				if (supported) {
+					document.getElementById('transparent-webm').innerText =
+						'Your browser supports transparent WebM!';
+				}
+			});
+		}
+
 		function doTestViaMediaElement() {
 			if (!window.HTMLVideoElement || !window.HTMLVideoElement.prototype.canPlayType) return;
 
@@ -202,6 +262,11 @@
 			} catch (e) {
 				alert(e);
 			}
+			try {
+				supportsWEBMTransparency();
+			} catch (e) {
+				alert(e);
+			}
 		}
 
 		window.onload = doInit;
@@ -210,6 +275,8 @@
 
 <h1 style="margin-bottom: 0;">Playable video codecs as reported by your browser</h1>
 <p style="margin-top: 0;">Hover each cell for the MimeType used.</p>
+
+<p id="transparent-webm">Your browser does not support transparent WebM.</p>
 
 <p>
 	*These test files are not meant to be indicative of quality, they are only for testing player
