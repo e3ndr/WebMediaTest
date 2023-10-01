@@ -1,3 +1,52 @@
+<script>
+	const FLASH_CODECS = [
+		{
+			name: 'Screen Video',
+			required: 6
+		},
+		{
+			name: 'Screen Video 2',
+			required: 8
+		},
+		{
+			name: 'Sorenson Spark / H.263',
+			required: 6
+		},
+		{
+			name: 'On2 TrueMotion VP6',
+			required: 8
+		},
+		{
+			name: 'AVC1 / H.264',
+			required: 9
+		},
+		{
+			name: 'MP3',
+			required: 6
+		},
+		{
+			name: 'AAC',
+			required: 9
+		},
+		{
+			name: 'Speex',
+			required: 10
+		},
+		{
+			name: 'Asao',
+			required: 6
+		},
+		{
+			name: 'A-law',
+			required: 6
+		},
+		{
+			name: 'μ-law',
+			required: 6
+		}
+	];
+</script>
+
 <svelte:head>
 	<title>WebMediaTest / Media Tester / Flash</title>
 	<script src="/js/flash_detect.js"></script>
@@ -51,61 +100,25 @@
 
 <table style="width: auto;">
 	<colgroup>
-		<col span="1" style="width: 200px;" />
-		<col span="1" style="width: 150px;" />
-		<col span="1" style="width: 150px;" />
+		<col span="1" style="width: 170px;" />
+		<col span="1" style="width: 40px;" />
+		<col span="1" style="width: 85px;" />
 	</colgroup>
 
 	<thead>
 		<tr>
 			<th> Codec </th>
+			<th> Since </th>
 			<th> Supported </th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Screen Video (6+) </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Screen Video 2 (8+) </td>
-			<td title="8" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Sorenson Spark / H.263 (6+) </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> On2 TrueMotion VP6 (8+) </td>
-			<td title="8" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> AVC1 / H.264 (9+) </td>
-			<td title="9" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> MP3 (6+) </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> AAC (9+) </td>
-			<td title="9" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Speex (10+) </td>
-			<td title="10" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> Asao (6+) </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> A-law (6+) </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
-		</tr>
-		<tr style="color: white;">
-			<td style="font-weight: bold; color: black;"> μ-law (6+) </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
-		</tr>
+		{#each FLASH_CODECS as { name, required }}
+			<tr style="color: white;">
+				<td style="font-weight: bold; color: black;"> {name} </td>
+				<td style="color: black; text-align: right;"> {required} </td>
+				<td title={required} class="flash-detect" style="background: red;"> No </td>
+			</tr>
+		{/each}
 	</tbody>
 </table>
