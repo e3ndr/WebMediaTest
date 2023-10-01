@@ -124,13 +124,33 @@
 		}
 	];
 
-	const SPECIAL_AUDIO_FORMATS = {
-		'audio/mp4': 'MPEG-4 Part 3 (.m4a)',
-		'audio/flac': 'FLAC',
-		'audio/mpeg': 'MP3',
-		'audio/wav': 'Wave (.wav)',
-		'application/x-mpegURL': 'Apple HLS'
-	};
+	const SPECIAL_AUDIO_FORMATS = [
+		{
+			mime: 'audio/mp4',
+			name: 'MPEG-4 Part 3 (.m4a)',
+			testFile: null
+		},
+		{
+			mime: 'audio/flac',
+			name: 'FLAC',
+			testFile: null
+		},
+		{
+			mime: 'audio/mpeg',
+			name: 'MP3',
+			testFile: null
+		},
+		{
+			mime: 'audio/wav',
+			name: 'Wave (.wav)',
+			testFile: null
+		},
+		{
+			mime: 'audio/mp4',
+			name: 'MPEG-4 Part 3 (.m4a)',
+			testFile: null
+		}
+	];
 </script>
 
 <svelte:head>
@@ -316,10 +336,22 @@
 		</tr>
 	</thead>
 	<tbody>
-		{#each Object.entries(SPECIAL_AUDIO_FORMATS) as [mime, name]}
+		{#each SPECIAL_AUDIO_FORMATS as { mime, name, testFile }}
 			<tr style="color: white;">
 				<td style="font-weight: bold; color: black;"> {@html name} </td>
-				<td title={mime} class="to-test" style="background: red;"> no </td>
+				<td style="padding: 0;">
+					{#if testFile}
+						<a
+							href="/media/player?file={encodeURIComponent(testFile)}"
+							class="to-test"
+							style="background: red;"
+						>
+							No
+						</a>
+					{:else}
+						<span title={mime} class="to-test" style="background: red;"> No </span>
+					{/if}
+				</td>
 			</tr>
 		{/each}
 	</tbody>

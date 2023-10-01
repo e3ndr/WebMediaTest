@@ -27,5 +27,5 @@
 	<embed src={data.file} width="426" height="240" />
 {:else}
 	<!-- svelte-ignore a11y-media-has-caption -->
-	<video src={data.file} width="426" height="240" controls />
+	<video src={data.file} width="426" height="240" controls autoplay />
 {/if}
