@@ -347,6 +347,7 @@
 					{#if testFile}
 						<a
 							href="/media/player?file={encodeURIComponent(testFile)}"
+							title={mime}
 							class="to-test"
 							style="background: red;"
 						>
