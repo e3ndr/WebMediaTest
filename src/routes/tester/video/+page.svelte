@@ -168,7 +168,8 @@
 		{
 			mime: 'application/x-mpegURL',
 			name: 'Apple HLS',
-			testFile: null
+			testFile:
+				'https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8' // https://developer.apple.com/streaming/examples/
 		}
 	];
 </script>
