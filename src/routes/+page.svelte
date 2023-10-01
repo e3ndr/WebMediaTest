@@ -34,9 +34,13 @@
 
 <br />
 <br />
-<h2>
-	<a href="/tester">See what my browser supports</a>
-</h2>
+<h2>Codec & Format Tester</h2>
+<ul>
+	<li><a href="/tester/video">Video Codecs</a></li>
+	<li><a href="/tester/audio">Audio Codecs</a></li>
+	<li><a href="/tester/images">Image Types</a></li>
+	<li><a href="/tester/flash">Adobe Shockwave Flash Support</a></li>
+</ul>
 
 <br />
 <br />
