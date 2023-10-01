@@ -225,7 +225,7 @@
 
 <table style="width: auto;">
 	<colgroup>
-		<col span="1" style="width: 230px;" />
+		<col span="1" style="width: 200px;" />
 		{#each CONTAINER_FORMATS as _}
 			<col span="1" style="width: 165px;" />
 		{/each}
@@ -246,7 +246,9 @@
 				<td>
 					{#if codecTestFile}
 						<a
-							href="/test-media/{codecSlug}/{codecTestFile}"
+							href="/media/player?file={encodeURIComponent(
+								`/test-media/${codecSlug}/${codecTestFile}`
+							)}"
 							style="font-weight: bold; color: black;"
 							style:margin-left={isCodecSubType ? '8px;' : '0;'}
 						>
@@ -265,7 +267,9 @@
 					<td style="padding: 0;">
 						{#if formatSlug && codecSlug && codecContainers.includes(formatMime)}
 							<a
-								href="/test-media/{codecSlug}/{formatSlug}"
+								href="/media/player?file={encodeURIComponent(
+									`/test-media/${codecSlug}/${formatSlug}`
+								)}"
 								title="audio/{formatMime}; codecs={codecMime}"
 								class="to-test"
 								style="background: red;"
