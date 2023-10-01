@@ -294,7 +294,7 @@
 		</tr>
 		<tr id="footnote2">
 			<td style="text-align: right;"> &#8224;&#8224; </td>
-			<td> G.711 and G.722 are usually supported via WebRTC. </td>
+			<td> G.711 and G.722 are usually only supported via WebRTC. </td>
 		</tr>
 	</tbody>
 </table>
