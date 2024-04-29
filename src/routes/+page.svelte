@@ -17,32 +17,12 @@
 	This site also has Flash/FLV content for testing console browsers (like on the Wii or PSP).
 </p>
 
-<br />
-<h2>Sample Media</h2>
-
+<h2>Testers:</h2>
 <ul>
-	{#each Object.entries(data.mediaIndexes) as [category, indexes]}
-		{#each indexes as index}
-			<li>
-				<a href="/media/{category}/{index.slug}">
-					{index.category}
-					/
-					{index.name}
-					/
-					{index.credit}
-				</a>
-			</li>
-		{/each}
-	{/each}
-</ul>
-
-<br />
-<br />
-<h2>Codec & Format Tester</h2>
-<ul>
+	<li><a href="/tester/container-formats">Container Formats</a></li>
 	<li><a href="/tester/video">Video Codecs</a></li>
 	<li><a href="/tester/audio">Audio Codecs</a></li>
-	<li><a href="/tester/images">Image Types</a></li>
+	<li><a href="/tester/images">Image Formats</a></li>
 	<li><a href="/tester/flash">Adobe Shockwave Flash Support</a></li>
 </ul>
 

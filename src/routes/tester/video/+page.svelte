@@ -222,7 +222,7 @@
 				});
 
 				var source = document.createElement('source');
-				source.src = '/test-media/transparency-test.webm';
+				source.src = '/video/transparency-test.webm';
 				source.addEventListener('error', function () {
 					document.body.removeChild(vid);
 					resolve(false);
@@ -334,9 +334,7 @@
 				<td>
 					{#if codecTestFile}
 						<a
-							href="/media/player?file={encodeURIComponent(
-								`/test-media/${codecSlug}/${codecTestFile}`
-							)}"
+							href="/media/player?file={encodeURIComponent(`/video/${codecSlug}/${codecTestFile}`)}"
 							style="font-weight: bold; color: black;"
 							style:margin-left={isCodecSubType ? '8px;' : '0;'}
 						>
@@ -355,9 +353,7 @@
 					<td style="padding: 0;">
 						{#if formatSlug && codecSlug && codecContainers.includes(formatMime)}
 							<a
-								href="/media/player?file={encodeURIComponent(
-									`/test-media/${codecSlug}/${formatSlug}`
-								)}"
+								href="/media/player?file={encodeURIComponent(`/video/${codecSlug}/${formatSlug}`)}"
 								title="video/{formatMime}; codecs={codecMime}"
 								class="to-test"
 								style="background: black;"
