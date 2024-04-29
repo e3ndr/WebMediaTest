@@ -22,12 +22,12 @@
 			try {
 				doApiTests();
 			} catch (e) {
-				alert(e);
+				alert(e.toString());
 			}
 			try {
 				doPluginsTest();
 			} catch (e) {
-				alert(e);
+				alert(e.toString());
 			}
 		}
 
