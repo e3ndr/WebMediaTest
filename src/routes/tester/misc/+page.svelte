@@ -119,7 +119,7 @@
 				var src = toTest[i].innerText;
 				var s = document.createElement('script');
 				s.innerText = src;
-				document.appendChild(s);
+				document.body.appendChild(s);
 			}
 		}
 	</script>
