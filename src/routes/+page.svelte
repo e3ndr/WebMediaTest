@@ -16,19 +16,28 @@
 	<br />
 	This site also has Flash/FLV content for testing console browsers (like on the Wii or PSP).
 </p>
+<br />
+<br />
 
-<h2>Testers:</h2>
+<h2>Media:</h2>
 <ul>
 	<li><a href="/tester/container-formats">Container Formats</a></li>
 	<li><a href="/tester/video">Video Codecs</a></li>
 	<li><a href="/tester/audio">Audio Codecs</a></li>
 	<li><a href="/tester/images">Image Formats</a></li>
+</ul>
+
+<h2>Plugins:</h2>
+<ul>
 	<li><a href="/tester/flash">Adobe Shockwave Flash Support</a></li>
+	<li><a href="/tester/silverlight">Microsoft Silverlight Support</a></li>
+</ul>
+
+<h2>APIs:</h2>
+<ul>
 	<li><a href="/tester/webrtc">WebRTC</a></li>
 </ul>
 
-<br />
-<br />
 <br />
 <br />
 <p>
