@@ -58,8 +58,7 @@
 </p>
 <br />
 <div>
-	HTTP:&nbsp;&nbsp;
-	<a href="http://nossl.wmt.e3ndr.xyz" target="_blank">http://nossl.wmt.e3ndr.xyz </a>
+	HTTP Link: <a href="http://nossl.wmt.e3ndr.xyz" target="_blank">http://nossl.wmt.e3ndr.xyz </a>
 	<br />
 	<small>
 		<a href="http://developers.cloudflare.com/ssl/static/origin_ca_ecc_root.pem">
