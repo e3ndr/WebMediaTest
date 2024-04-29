@@ -360,17 +360,17 @@
 								)}"
 								title="video/{formatMime}; codecs={codecMime}"
 								class="to-test"
-								style="background: red;"
+								style="background: black;"
 							>
-								No
+								Unknown
 							</a>
 						{:else}
 							<span
 								title="video/{formatMime}; codecs={codecMime}"
 								class="to-test"
-								style="background: red;"
+								style="background: black;"
 							>
-								No
+								Unknown
 							</span>
 						{/if}
 					</td>
