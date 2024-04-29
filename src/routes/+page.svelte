@@ -51,10 +51,11 @@
 <br />
 <br />
 <p>
-	Built using SvelteKit, Served with Cloudflare, Code on <a
-		href="https://github.com/e3ndr/WebMediaTest"
-		target="_blank">Github</a
-	>.
+	Built using SvelteKit, <a
+		href="https://web.archive.org/web/20190306095336/http://flv-player.net/players/maxi/documentation/"
+		>FLV Player</a
+	>, <a href="https://github.com/goker-dev/f4player/tree/master">f4player</a>, and served with
+	CloudFlare, Code on <a href="https://github.com/e3ndr/WebMediaTest" target="_blank">Github</a>.
 </p>
 <br />
 <div>
