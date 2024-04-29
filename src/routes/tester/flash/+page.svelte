@@ -159,7 +159,7 @@
 			<tr style="color: white;">
 				<td style="font-weight: bold; color: black;"> {name} </td>
 				<td style="color: black; text-align: right;"> {required} </td>
-				<td title={required} class="flash-detect" style="background: red;"> No </td>
+				<td title={required} class="flash-detect" style="background: black;"> Unknown </td>
 			</tr>
 		{/each}
 	</tbody>
@@ -186,22 +186,22 @@
 		<tr style="color: white;">
 			<td style="font-weight: bold; color: black;"> SWF </td>
 			<td style="color: black; text-align: right;"> 6 </td>
-			<td title="6" class="flash-detect" style="background: red;"> No </td>
+			<td title="6" class="flash-detect" style="background: black;"> Unknown </td>
 		</tr>
 		<tr style="color: white;">
 			<td style="font-weight: bold; color: black;"> FLV </td>
 			<td style="color: black; text-align: right;"> 7 </td>
-			<td title="7" class="flash-detect" style="background: red;"> No </td>
+			<td title="7" class="flash-detect" style="background: black;"> Unknown </td>
 		</tr>
 		<tr style="color: white;">
 			<td style="font-weight: bold; color: black;"> F4V </td>
 			<td style="color: black; text-align: right;"> 9 </td>
-			<td title="9" class="flash-detect" style="background: red;"> No </td>
+			<td title="9" class="flash-detect" style="background: black;"> Unknown </td>
 		</tr>
 		<tr style="color: white;">
 			<td style="font-weight: bold; color: black;"> ISOMBFF </td>
 			<td style="color: black; text-align: right;"> 9 </td>
-			<td title="9" class="flash-detect" style="background: red;"> No </td>
+			<td title="9" class="flash-detect" style="background: black;"> Unknown </td>
 		</tr>
 	</tbody>
 </table>

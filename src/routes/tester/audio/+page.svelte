@@ -272,17 +272,17 @@
 								)}"
 								title="audio/{formatMime}; codecs={codecMime}"
 								class="to-test"
-								style="background: red;"
+								style="background: black;"
 							>
-								No
+								Unknown
 							</a>
 						{:else}
 							<span
 								title="audio/{formatMime}; codecs={codecMime}"
 								class="to-test"
-								style="background: red;"
+								style="background: black;"
 							>
-								No
+								Unknown
 							</span>
 						{/if}
 					</td>
@@ -294,7 +294,9 @@
 			<td style="font-weight: bold; color: black;"> (Container-only) </td>
 			{#each CONTAINER_FORMATS as { mime: formatMime }}
 				<td style="padding: 0;">
-					<span title="audio/{formatMime}" class="to-test" style="background: red;"> No </span>
+					<span title="audio/{formatMime}" class="to-test" style="background: black;">
+						Unknown
+					</span>
 				</td>
 			{/each}
 		</tr>
@@ -349,12 +351,12 @@
 							href="/media/player?file={encodeURIComponent(testFile)}"
 							title={mime}
 							class="to-test"
-							style="background: red;"
+							style="background: black;"
 						>
-							No
+							Unknown
 						</a>
 					{:else}
-						<span title={mime} class="to-test" style="background: red;"> No </span>
+						<span title={mime} class="to-test" style="background: black;"> Unknown </span>
 					{/if}
 				</td>
 			</tr>
