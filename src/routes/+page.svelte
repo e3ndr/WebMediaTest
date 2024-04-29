@@ -36,6 +36,7 @@
 <h2>APIs:</h2>
 <ul>
 	<li><a href="/tester/webrtc">WebRTC</a></li>
+	<li><a href="/tester/misc">Miscellaneous (Plugins, APIs)</a></li>
 </ul>
 
 <br />
