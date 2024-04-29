@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>WebMediaTest / Media Tester / WebRTC</title>
-	<script src="/js/flash_detect.js"></script>
+	<script src="/js/webrtc-adapter.js"></script>
 </svelte:head>
 
 <!-- 
