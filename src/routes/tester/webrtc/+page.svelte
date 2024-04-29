@@ -10,11 +10,11 @@
 <h1>WebRTC Tester</h1>
 <br />
 
-<h2>Local Call</h2>
+<h2>Media Test</h2>
 <div>
 	<!-- svelte-ignore a11y-media-has-caption -->
 	<video
-		id="local-call"
+		id="media-test"
 		style="background: black;"
 		autoplay
 		playsinline
@@ -25,7 +25,7 @@
 	/>
 	<br />
 	<script>
-		function startLocalCall() {
+		function startMediaTest() {
 			try {
 				var constraints = {
 					audio: true,
@@ -34,7 +34,7 @@
 
 				navigator.mediaDevices.getUserMedia(constraints).then(function (stream) {
 					console.log(stream);
-					var video = document.getElementById('local-call');
+					var video = document.getElementById('media-test');
 					if ('srcObject' in video) {
 						video.srcObject = stream;
 					} else {
@@ -46,6 +46,6 @@
 			}
 		}
 	</script>
-	<button onclick="startLocalCall()"> Start </button>
+	<button onclick="startMediaTest()"> Start </button>
 	<button onclick="location.reload();"> End </button>
 </div>
