@@ -24,7 +24,7 @@
 				flv: ['FLV Player'],
 				swf: ['SWF'],
 				webm: ['HTML5'],
-				mp4: ['HTML5'],
+				mp4: ['HTML5', 'FLASH MP4'],
 				matroska: ['HTML5']
 			}[container]}
 
@@ -57,6 +57,7 @@
 							<a href="/media/player?file={encodeURIComponent(file.file)}&player={playerType}">
 								{player}
 							</a>
+							&nbsp;&nbsp;
 						{/each}
 					</td>
 					<td>

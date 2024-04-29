@@ -105,7 +105,7 @@ export default {
                 ],
                 "file": h264_aac__1080p_mkv,
                 "size": "18.1MB",
-                "notes": "Browsers will actually play MKV files! Since Webm is based on Matroska they have the same headers, and if the browser does a content probe it will think it's a Webm file and start playback."
+                "notes": "Browsers will actually play MKV files!" //  Since Webm is based on Matroska they have the same headers, and if the browser does a content probe it will think it's a Webm file and start playback.
             }
         ],
         "flv": [
