@@ -26,8 +26,8 @@
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<object
 		id="f4Player"
-		width="480"
-		height="270"
+		width="426"
+		height="240"
 		type="application/x-shockwave-flash"
 		data="/f4player.swf?v1.3.5"
 	>
