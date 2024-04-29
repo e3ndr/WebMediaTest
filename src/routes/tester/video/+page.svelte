@@ -443,12 +443,12 @@
 							href="/media/player?file={encodeURIComponent(testFile)}"
 							title={mime}
 							class="to-test"
-							style="background: red;"
+							style="background: black;"
 						>
-							No
+							Unknown
 						</a>
 					{:else}
-						<span title={mime} class="to-test" style="background: red;"> No </span>
+						<span title={mime} class="to-test" style="background: black;"> Unknown </span>
 					{/if}
 				</td>
 			</tr>
