@@ -51,11 +51,15 @@
 	</li>
 	<li>
 		<a href="https://www.google.com/search?q=hello+world+before%3A2010">
-			Google's before: keyword
+			Google's <pre style="display: inline-block;">before:</pre>
+			keyword
 		</a>
 		+
-		<a href="https://web.archive.org/*/http://example.com"> The wayback machine. </a>
+		<a href="https://web.archive.org/*/http://example.com"> The Wayback Machine. </a>
 		Useful for finding things that might've been scrubbed from the internet.
+	</li>
+	<li>
+		<a href="https://caniuse.com/"> Can I Use, helpful for things like Internet Explorer. </a>
 	</li>
 </ul>
 
