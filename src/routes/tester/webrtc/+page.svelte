@@ -19,7 +19,6 @@
 		style="background: black;"
 		autoplay
 		playsinline
-		controls
 		muted
 		width="256"
 		height="144"
@@ -59,7 +58,6 @@
 		style="background: black;"
 		autoplay
 		playsinline
-		controls
 		muted
 		width="256"
 		height="144"
@@ -69,7 +67,6 @@
 		style="background: black;"
 		autoplay
 		playsinline
-		controls
 		muted
 		width="256"
 		height="144"
