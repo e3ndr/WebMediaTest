@@ -39,6 +39,26 @@
 	<li><a href="/tester/misc">Miscellaneous (Plugins, APIs)</a></li>
 </ul>
 
+<h2>Useful things for old browsers:</h2>
+<ul>
+	<li>
+		<a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">
+			Browser Polyfills (with Flash and Silverlight fallbacks)
+		</a>
+	</li>
+	<li>
+		<a href="https://ffmpeg.org"> FFMpeg (for encoding various different video formats) </a>
+	</li>
+	<li>
+		<a href="https://www.google.com/search?q=hello+world+before%3A2010">
+			Google's before: keyword
+		</a>
+		+
+		<a href="https://web.archive.org/*/http://example.com"> The wayback machine. </a>
+		Useful for finding things that might've been scrubbed from the internet.
+	</li>
+</ul>
+
 <br />
 <br />
 <p>
