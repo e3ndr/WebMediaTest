@@ -1,7 +1,15 @@
 <script>
 	const APIS = [
 		{ name: 'navigator', check: 'window.navigator' },
-		{ name: 'navigator.plugins', check: 'window.navigator && window.navigator.plugins' }
+		{ name: 'navigator.plugins', check: 'window.navigator && window.navigator.plugins' },
+		{ name: 'localStorage', check: 'window.localStorage' },
+		{ name: 'alert', check: 'window.alert' },
+		{ name: 'console', check: 'window.console' },
+		{ name: 'opera', check: 'window.opera' },
+		{ name: 'opera.wiiremote', check: 'window.opera && window.opera.wiiremote' }, // https://web.archive.org/web/20080206141846/http://ajaxian.com/archives/the-wii-remote-api-now-your-userbase-is-four
+		{ name: 'WebSocket', check: 'window.WebSocket' },
+		{ name: 'fetch', check: 'window.fetch' },
+		{ name: 'XMLHttpRequest / AJAX', check: 'window.XMLHttpRequest' }
 	];
 </script>
 
