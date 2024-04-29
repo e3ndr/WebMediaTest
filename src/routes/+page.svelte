@@ -24,6 +24,7 @@
 	<li><a href="/tester/audio">Audio Codecs</a></li>
 	<li><a href="/tester/images">Image Formats</a></li>
 	<li><a href="/tester/flash">Adobe Shockwave Flash Support</a></li>
+	<li><a href="/tester/webrtc">WebRTC</a></li>
 </ul>
 
 <br />
