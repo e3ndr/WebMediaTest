@@ -6,7 +6,7 @@
 	<title>WebMediaTest / Media / {data.name}</title>
 </svelte:head>
 
-<a href="/media">Go Back</a>
+<a href="/">Go Back</a>
 <br />
 <br />
 
