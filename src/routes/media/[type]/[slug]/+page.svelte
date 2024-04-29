@@ -19,7 +19,13 @@
 <br />
 <div>
 	{#each Object.entries(data.files) as [container, files]}
-		{@const playerType = { flv: 'flash', swf: 'flash' }[container] || 'html5'}
+		{@const supportedPlayers = {
+			flv: ['FLV Player'],
+			swf: ['SWF'],
+			webm: ['HTML5'],
+			mp4: ['HTML5'],
+			matroska: ['HTML5']
+		}[container]}
 
 		<div>
 			<h2>{container.toUpperCase()}</h2>
@@ -46,9 +52,12 @@
 								</a>
 							</td>
 							<td>
-								<a href="/media/player?file={encodeURIComponent(file.file)}">
-									{playerType.toUpperCase()}
-								</a>
+								{#each supportedPlayers as player}
+									{@const playerType = player.toLowerCase().replace(' ', '-')}
+									<a href="/media/player?file={encodeURIComponent(file.file)}&player={playerType}">
+										{player}
+									</a>
+								{/each}
 							</td>
 							<td>
 								{@html file.notes}
