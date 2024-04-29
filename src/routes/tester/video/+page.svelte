@@ -232,7 +232,7 @@
 				document.body.appendChild(vid);
 			});
 
-			detection.then((supported) => {
+			detection.then(function (supported) {
 				if (supported) {
 					document.getElementById('transparent-webm').innerText =
 						'Your browser supports transparent WebM!';
