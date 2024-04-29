@@ -86,14 +86,15 @@
 					console.log('Self:', selfStream);
 					var selfVideo = document.getElementById('local-call-self');
 					var remoteVideo = document.getElementById('local-call-remote');
-					var selfPC = new RTCPeerConnection({});
-					var remotePC = new RTCPeerConnection({});
 
 					if ('srcObject' in selfVideo) {
 						selfVideo.srcObject = selfStream;
 					} else {
 						selfVideo.src = (window.URL || window.webkitURL).createObjectURL(selfStream);
 					}
+
+					var selfPC = new RTCPeerConnection({});
+					var remotePC = new RTCPeerConnection({});
 
 					selfStream.getTracks().forEach(function (track) {
 						selfPC.addTrack(track, selfStream);
