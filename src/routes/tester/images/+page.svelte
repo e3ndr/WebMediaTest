@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-	<title>WebMediaTest / Media Tester / Images</title>
+	<title>WebMediaTest / Images</title>
 </svelte:head>
 
 <h1 style="margin-bottom: 0;">A table of image formats for you to take a gander at</h1>

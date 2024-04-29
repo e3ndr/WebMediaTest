@@ -90,7 +90,7 @@
 </script>
 
 <svelte:head>
-	<title>WebMediaTest / Media Tester / Flash</title>
+	<title>WebMediaTest / Flash</title>
 	<script src="/js/flash_detect.js"></script>
 
 	<script>

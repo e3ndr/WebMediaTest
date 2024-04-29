@@ -114,7 +114,7 @@
 </script>
 
 <svelte:head>
-	<title>WebMediaTest / Media / Container Formats</title>
+	<title>WebMediaTest / Container Formats</title>
 </svelte:head>
 
 <h1>Various container formats with both Audio and Video</h1>

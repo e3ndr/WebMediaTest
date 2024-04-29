@@ -154,7 +154,7 @@
 </script>
 
 <svelte:head>
-	<title>WebMediaTest / Media Tester / Audio</title>
+	<title>WebMediaTest / Audio</title>
 
 	<script>
 		// This code is designed this way to maintain compability for non-HTML5 browsers. Deal with it.

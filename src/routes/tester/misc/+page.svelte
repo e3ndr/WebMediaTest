@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>WebMediaTest / Media Tester / Miscellaneous</title>
+	<title>WebMediaTest / Miscellaneous</title>
 </svelte:head>
 
 <!-- 

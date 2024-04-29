@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-	<title>WebMediaTest / Media Tester / Silverlight</title>
+	<title>WebMediaTest / Silverlight</title>
 	<script src="/js/silverlight.js"></script>
 
 	<script>

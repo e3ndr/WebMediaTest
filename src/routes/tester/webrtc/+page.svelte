@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>WebMediaTest / Media Tester / WebRTC</title>
+	<title>WebMediaTest / WebRTC</title>
 	<script src="/js/webrtc-adapter-with-edge.js"></script>
 	<!-- <script src="//webrtchacks.github.io/adapter/adapter-latest.js"></script> -->
 </svelte:head>
