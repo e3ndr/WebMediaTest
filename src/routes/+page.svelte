@@ -37,7 +37,7 @@
 <ul>
 	<li><a href="/tester/webrtc">WebRTC</a></li>
 	<li><a href="/tester/misc">Miscellaneous (Plugins, APIs)</a></li>
-	<li><a href="/tester/headers">Browser Headers (e.g User-Agent)</a></li>
+	<li><a href="//echo.casterlabs.co">Browser Headers (e.g User-Agent)</a></li>
 </ul>
 
 <h2>Useful things for old browsers:</h2>
